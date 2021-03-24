@@ -1,8 +1,11 @@
 import React, { Component } from 'react'
 import {Consumer } from '../../context'
 export default class Contact extends Component {
+    componentDidUpdate(){
+        console.log('mise a jour')
+    }
     state={
-        show:true
+        show:false
     }
     montrecontat = () =>{
         this.setState({
