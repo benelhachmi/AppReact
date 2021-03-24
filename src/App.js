@@ -1,8 +1,9 @@
 import React  from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css'
-import List from './component/List'
+import List from './component/contact/List'
 import Header from './component/Header'
 import {Provider} from './context'
+import AddContact from './component/contact/AddContact'
 function App () {
 
     return (
@@ -10,6 +11,7 @@ function App () {
       <div className="App">
         <Header/>
         <div className="container">
+          <AddContact/>
         <List/>
         </div>
 
